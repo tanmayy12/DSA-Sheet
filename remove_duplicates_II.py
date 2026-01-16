@@ -1,0 +1,14 @@
+class Solution:
+    def removeDuplicates(self, nums):
+        n = len(nums)
+        if n <= 2:
+            return n
+
+        k = 2  # index for placing valid elements
+
+        for i in range(2, n):
+            if nums[i] != nums[k - 2]:
+                nums[k] = nums[i]
+                k += 1
+
+        return k
