@@ -22,3 +22,4 @@ class Solution:
                     return curr_sum
 
         return closest_sum
+
