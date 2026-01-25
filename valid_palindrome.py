@@ -1,17 +1,17 @@
 class Solution:
-    def isPalindrome(self, s):
-        left, right = 0, len(s) - 1
+    def isIsomorphic(self, s, t):
+        if len(s) != len(t):
+            return False
 
-        while left < right:
-            while left < right and not s[left].isalnum():
-                left += 1
-            while left < right and not s[right].isalnum():
-                right -= 1
+        mapST = {}
+        mapTS = {}
 
-            if s[left].lower() != s[right].lower():
+        for c1, c2 in zip(s, t):
+            if (c1 in mapST and mapST[c1] != c2) or \
+               (c2 in mapTS and mapTS[c2] != c1):
                 return False
 
-            left += 1
-            right -= 1
+            mapST[c1] = c2
+            mapTS[c2] = c1
 
         return True
