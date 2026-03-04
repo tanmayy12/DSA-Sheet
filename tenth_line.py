@@ -1,5 +1,6 @@
 def print_tenth_line(filename):
-    with open(filename) as f:
-        lines = f.readlines()
-        if len(lines) >= 10:
-            print(lines[9].strip())
+    with open(filename, "r") as file:
+        for i, line in enumerate(file, start=1):
+            if i == 10:
+                print(line.strip())
+                return
