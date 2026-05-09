@@ -16,7 +16,7 @@ class Solution:
 
                 if total == 0:
                     res.append([nums[i], nums[left], nums[right]])
-
+ 
                     left += 1
                     right -= 1
 
