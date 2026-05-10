@@ -11,5 +11,5 @@ class Solution:
                     stack.pop()
             else:
                 stack.append(part)
-
+                
         return "/" + "/".join(stack)
