@@ -20,5 +20,4 @@ class Solution:
                     return False
             else:
                 word_to_char[w] = c
-        
         return True
