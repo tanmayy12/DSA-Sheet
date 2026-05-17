@@ -15,7 +15,6 @@ class Solution:
 
                 if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
                     continue
-
                 used[i] = True
                 curr.append(nums[i])
                 backtrack(curr)
