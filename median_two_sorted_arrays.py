@@ -7,6 +7,7 @@ class Solution:
         
         if n % 2 == 1:
             return float(merged[n // 2])
+        
         else:
             mid1 = merged[n // 2 - 1]
             mid2 = merged[n // 2]
