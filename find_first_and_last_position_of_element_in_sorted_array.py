@@ -16,6 +16,7 @@ class Solution:
             else:
                 right = mid - 1
 
+
         # Find last occurrence
         left, right = 0, n - 1
         while left <= right:
