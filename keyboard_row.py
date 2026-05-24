@@ -12,8 +12,10 @@ class Solution:
 
             if all(ch in row1 for ch in lower_word):
                 result.append(word)
+
             elif all(ch in row2 for ch in lower_word):
                 result.append(word)
+                
             elif all(ch in row3 for ch in lower_word):
                 result.append(word)
 
