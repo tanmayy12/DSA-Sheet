@@ -14,4 +14,5 @@ class Solution:
                 backtrack(curr + ")", open_cnt, close_cnt + 1)
 
         backtrack("", 0, 0)
+        
         return result
