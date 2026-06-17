@@ -11,6 +11,7 @@ class Solution:
             groups[key].append(word)
 
         result = []
+        
         for value in groups.values():
             result.append(value)
 
