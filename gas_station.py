@@ -17,4 +17,5 @@ class Solution:
         
         if total_tank < 0:
             return -1
+        
         return start
