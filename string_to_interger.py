@@ -21,6 +21,7 @@ class Solution:
             # 4. Clamp during conversion
             if sign * num <= -2**31:
                 return -2**31
+                
             if sign * num >= 2**31 - 1:
                 return 2**31 - 1
             
