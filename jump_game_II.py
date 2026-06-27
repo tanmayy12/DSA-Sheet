@@ -8,6 +8,7 @@ class Solution:
             farthest = max(farthest, i + nums[i])
 
             if i == current_end:
+                
                 jumps += 1
                 current_end = farthest
 
