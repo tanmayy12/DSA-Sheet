@@ -14,6 +14,7 @@ class Solution:
 
             if left == len(tails):
                 tails.append(num)
+                
             else:
                 tails[left] = num
 
