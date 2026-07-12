@@ -10,8 +10,10 @@ class Solution:
 
             if curr == 0:
                 count += higher * factor
+
             elif curr == 1:
                 count += higher * factor + lower + 1
+                
             else:
                 count += (higher + 1) * factor
 
